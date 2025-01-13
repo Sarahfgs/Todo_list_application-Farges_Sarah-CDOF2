@@ -12,4 +12,6 @@ For macOS users: brew install python
 
 ## How to Run the Project
 
-On the terminal: python main.py
+On the terminal: 
+```bash
+python main.py
