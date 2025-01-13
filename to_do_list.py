@@ -16,8 +16,21 @@ def add_task():
 
 def delete_task():
     view_tasks()
-    task_num = int(input("Enter task number to delete: ")) - 1
-    tasks.pop(task_num)  # Bug: Doesn't check if task_num is within valid range
+    if not tasks:  # Check if there are no tasks to delete
+        print("No tasks to delete.")
+        return
+
+    task_num = input("Enter task number to delete: ")
+    if not task_num.isdigit():  # Ensure the input is a number
+        print("Error: Please enter a valid number.")
+        return
+
+    task_num = int(task_num) - 1
+    if task_num < 0 or task_num >= len(tasks):  # Validate the task number
+        print("Error: Invalid task number.")
+    else:
+        deleted_task = tasks.pop(task_num)
+        print(f"Task '{deleted_task['task']}' has been deleted.")
 
 def complete_task():
     view_tasks()
