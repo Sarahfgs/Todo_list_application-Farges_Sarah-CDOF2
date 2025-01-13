@@ -33,11 +33,11 @@ To test the functionality of the To-Do List application, you can run it and manu
 
 Test each functionality:
 
--View tasks: Choose option 1 to see the current tasks (initially, there will be none).
--Add tasks: Choose option 2 and enter a task description.
--Delete tasks: Choose option 3 after adding tasks to remove a task by its number.
--Complete tasks: Choose option 4 after adding tasks to mark them as completed.
--Choose option 5 to exit the application.
+- **View tasks**: Choose option 1 to see the current tasks (initially, there will be none).
+- **Add tasks**: Choose option 2 and enter a task description.
+- **Delete tasks**: Choose option 3 after adding tasks to remove a task by its number.
+- **Complete tasks**: Choose option 4 after adding tasks to mark them as completed.
+- **Exit the application**: Choose option 5 to exit the application.
 
 ## Author
 
