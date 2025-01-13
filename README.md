@@ -4,11 +4,21 @@ This is a simple console-based To-Do List application written in Python. It allo
 
 ## Installing Prerequisites
 
-This project was written on Python, if you don't have Python on your machine, you need to install it. You can check if you have it installed by writting on the terminal: python --version 
+This project was written on Python, if you don't have Python on your machine, you need to install it. You can check if you have it installed by writting on the terminal: 
+```bash 
+python --version 
+```
 
 If it's not installed:
-For Windows users: winget install Python.Python.3
-For macOS users: brew install python
+For Windows users: 
+```bash
+winget install Python.Python.3
+```
+
+For macOS users: 
+```bash
+brew install python
+```
 
 ## How to Run the Project
 
