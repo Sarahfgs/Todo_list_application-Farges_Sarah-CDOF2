@@ -37,23 +37,6 @@ def complete_task():
     task_num = int(input("Enter task number to complete: ")) - 1
     tasks[task_num]['completed'] = True
 
-def edit_task():
-    view_tasks()
-    if not tasks:
-        print("No tasks to edit.")
-        return
-    task_num = input("Enter task number to edit: ").strip()
-    if not task_num.isdigit() or not (1 <= int(task_num) <= len(tasks)):
-        print("Error: Invalid task number.")
-        return
-    task_num = int(task_num)
-    new_task_title = input("Enter the new title for the task: ").strip()
-    if not new_task_title:
-        print("Error: Task title cannot be empty.")
-        return
-    tasks[task_num]['task'] = new_task_title
-    print(f"Task {task_num + 1} has been updated to '{new_task_title}'.")
-
 def main():
     while True:
         show_menu()
@@ -67,8 +50,6 @@ def main():
         elif choice == '4':
             complete_task()
         elif choice == '5':
-            edit_task()
-        elif choice == '6':
             print("Exiting the To-Do List application.")
             break
         else:
