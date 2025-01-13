@@ -39,7 +39,7 @@ cd todo_list_application
 
 2. Run the application: 
 ```bash
-python main.py
+python to_do_list.py
 ```
 ## Features and Usage
 
