@@ -17,7 +17,7 @@ def add_task():
 def delete_task():
     view_tasks()
     task_num = int(input("Enter task number to delete: ")) - 1
-    tasks.pop(task_num) 
+    tasks.pop(task_num)  # Bug: Doesn't check if task_num is within valid range
 
 def complete_task():
     view_tasks()
