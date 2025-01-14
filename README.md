@@ -18,6 +18,7 @@ This project requires Python to be installed on your machine.
 Run the following command in your terminal:
 ```bash
 python --version
+```
 
 If it's not installed:
 For Windows users: 
