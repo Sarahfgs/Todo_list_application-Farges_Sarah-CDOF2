@@ -46,7 +46,7 @@ def edit_task():
     if not task_num.isdigit() or not (1 <= int(task_num) <= len(tasks)):
         print("Error: Invalid task number.")
         return
-    task_num = int(task_num) - 1
+    task_num = int(task_num)
     new_task_title = input("Enter the new title for the task: ").strip()
     if not new_task_title:
         print("Error: Task title cannot be empty.")
